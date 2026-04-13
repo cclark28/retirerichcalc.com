@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Much Do I Need to Retire? | RetireRichCalc</title>
+  <meta name="description" content="Calculate your exact retirement number using the 4% safe withdrawal rule. Free calculator with instant live results.">
+  <meta name="theme-color" content="#0F2447">
+  <link rel="canonical" href="https://retirerichcalc.com/retirement-needs/">
+  <link rel="alternate" hreflang="en" href="https://retirerichcalc.com/retirement-needs/">
+  <link rel="alternate" hreflang="x-default" href="https://retirerichcalc.com/retirement-needs/">
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="How Much Do I Need to Retire? | RetireRichCalc">
+  <meta property="og:description" content="Find your retirement number instantly. Free calculator based on the 4% rule.">
+  <meta property="og:url"         content="https://retirerichcalc.com/retirement-needs/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230F2447'/%3E%3Ctext x='16' y='23' font-family='serif' font-size='20' font-weight='bold' fill='white' text-anchor='middle'%3E%24%3C/text%3E%3C/svg%3E">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4785900830813173" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Retirement Needs Calculator — RetireRichCalc","url":"https://retirerichcalc.com/retirement-needs/","description":"How much do you need to retire? Calculate using the 4% safe withdrawal rule.","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  </script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to calculator</a>
+
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="/" class="site-logo" aria-label="RetireRichCalc — Home">
+      <span class="logo-text">RetireRichCalc</span>
+      <span class="logo-sub">Free Retirement Calculators</span>
+    </a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+      <a href="/"                  class="nav-link">Home</a>
+      <a href="/millionaire/"      class="nav-link">Millionaire Calc</a>
+      <a href="/retirement-needs/" class="nav-link active">Retirement Needs</a>
+      <a href="/debt-freedom/"     class="nav-link">Debt Freedom</a>
+      <a href="/savings-rate/"     class="nav-link">Savings Rate</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="page-header">
+    <div class="page-header-inner">
+      <div class="page-breadcrumb"><a href="/">Home</a> / Retirement Needs</div>
+      <div class="page-eyebrow">Retirement Calculator</div>
+      <h1 class="page-title">How Much Do I Need to Retire?</h1>
+      <p class="page-desc">Based on the 4% safe withdrawal rule — withdraw 4% of your savings per year and it should last 30+ years. Adjust your numbers below.</p>
+    </div>
+  </div>
+
+  <section class="calc-section" aria-label="Retirement Needs Calculator">
+    <div class="calc-wrap">
+      <div class="calc-grid">
+
+        <div class="calc-inputs" role="form" aria-label="Calculator inputs">
+          <h2 class="calc-inputs-heading">Your Retirement Picture</h2>
+
+          <div class="input-group">
+            <div class="input-row">
+              <label class="input-label-text" for="monthlyExpenses">Monthly Expenses in Retirement</label>
+              <span class="input-value-display" id="dMonthlyExpenses">$5,000/mo</span>
+            </div>
+            <div class="slider-wrap">
+              <input type="range" id="monthlyExpenses" min="1000" max="15000" step="250" value="5000" aria-label="Monthly expenses in retirement">
+            </div>
+            <div class="slider-minmax"><span class="slider-min">$1,000</span><span class="slider-max">$15,000</span></div>
+          </div>
+
+          <div class="input-group">
+            <div class="input-row">
+              <label class="input-label-text" for="currentAge">Your Current Age</label>
+              <span class="input-value-display" id="dCurrentAge">35 yrs</span>
+            </div>
+            <div class="slider-wrap">
+              <input type="range" id="currentAge" min="20" max="65" step="1" value="35" aria-label="Current age">
+            </div>
+            <div class="slider-minmax"><span class="slider-min">20</span><span class="slider-max">65</span></div>
+          </div>
+
+          <div class="input-group">
+            <div class="input-row">
+              <label class="input-label-text" for="retirementAge">Target Retirement Age</label>
+              <span class="input-value-display" id="dRetirementAge">65 yrs</span>
+            </div>
+            <div class="slider-wrap">
+              <input type="range" id="retirementAge" min="45" max="75" step="1" value="65" aria-label="Target retirement age">
+            </div>
+            <div class="slider-minmax"><span class="slider-min">45</span><span class="slider-max">75</span></div>
+          </div>
+
+          <div class="input-group">
+            <div class="input-row">
+              <label class="input-label-text" for="annualReturn">Expected Annual Return</label>
+              <span class="input-value-display" id="dAnnualReturn">7.0%</span>
+            </div>
+            <div class="slider-wrap">
+              <input type="range" id="annualReturn" min="2" max="12" step="0.5" value="7" aria-label="Expected annual return">
+            </div>
+            <div class="slider-minmax"><span class="slider-min">2%</span><span class="slider-max">12%</span></div>
+          </div>
+
+          <div class="input-group">
+            <div class="input-row">
+              <label class="input-label-text" for="currentSavings">Current Savings</label>
+              <span class="input-value-display" id="dCurrentSavings">$50,000</span>
+            </div>
+            <div class="slider-wrap">
+              <input type="range" id="currentSavings" min="0" max="2000000" step="10000" value="50000" aria-label="Current savings">
+            </div>
+            <div class="slider-minmax"><span class="slider-min">$0</span><span class="slider-max">$2M</span></div>
+          </div>
+
+        </div>
+
+        <div class="calc-results" aria-live="polite" aria-label="Results">
+          <div class="result-eyebrow">You need to retire</div>
+          <div class="result-primary">
+            <div class="result-number" id="rRequired">—</div>
+            <div class="result-sub"    id="rSub">to retire at 65 (4% rule)</div>
+          </div>
+          <div class="result-divider"></div>
+          <div class="result-stats">
+            <div class="stat-row">
+              <span class="stat-label">Current Savings</span>
+              <span class="stat-value" id="rCurrentSavings">—</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Years to Retirement</span>
+              <span class="stat-value" id="rYearsToRetire">—</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Gap to Close</span>
+              <span class="stat-value accent" id="rGapAmount">—</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Monthly Savings Needed</span>
+              <span class="stat-value green" id="rMonthlySavings">—</span>
+            </div>
+          </div>
+          <div class="result-bar-section">
+            <div class="result-bar-labels"><span>Saved</span><span>Target</span></div>
+            <div class="result-bar-track"><div class="result-bar-fill" id="rBar" style="width:10%"></div></div>
+          </div>
+          <button class="btn-share" onclick="shareRetirement()" aria-label="Share your result">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+            </svg>
+            Share My Number
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <span class="logo-text">RetireRichCalc</span>
+          <span class="logo-sub" style="display:block;margin-top:4px;">Free Retirement Calculators</span>
+        </div>
+        <p class="footer-desc">Free, instant retirement calculators. No sign-up, no noise — just your number.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Calculators</div>
+        <ul class="footer-links">
+          <li><a href="/millionaire/">Millionaire Calc</a></li>
+          <li><a href="/retirement-needs/">Retirement Needs</a></li>
+          <li><a href="/debt-freedom/">Debt Freedom</a></li>
+          <li><a href="/savings-rate/">Savings Rate</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Site</div>
+        <ul class="footer-links"><li><a href="/">Home</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copyright">&copy; 2026 RetireRichCalc.com. All rights reserved.</div>
+      <p class="footer-disclaimer">For educational purposes only. Not financial advice. Consult a licensed financial advisor for personalized guidance.</p>
+    </div>
+  </div>
+</footer>
+
+<div id="rrc-toast" class="toast" role="status" aria-live="polite"></div>
+<script src="/assets/js/shared.js"></script>
+<script src="/assets/js/retirement.js"></script>
+</body>
+</html>

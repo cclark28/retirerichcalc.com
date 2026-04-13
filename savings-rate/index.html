@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savings Rate Calculator | RetireRichCalc</title>
+  <meta name="description" content="Calculate your savings rate and find out how many years until financial independence. Based on the Mr. Money Mustache savings rate research.">
+  <meta name="theme-color" content="#0F2447">
+  <link rel="canonical" href="https://retirerichcalc.com/savings-rate/">
+  <link rel="alternate" hreflang="en" href="https://retirerichcalc.com/savings-rate/">
+  <link rel="alternate" hreflang="x-default" href="https://retirerichcalc.com/savings-rate/">
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Savings Rate Calculator | RetireRichCalc">
+  <meta property="og:description" content="Your savings rate is the single biggest factor in when you can retire. Find yours instantly.">
+  <meta property="og:url"         content="https://retirerichcalc.com/savings-rate/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230F2447'/%3E%3Ctext x='16' y='23' font-family='serif' font-size='20' font-weight='bold' fill='white' text-anchor='middle'%3E%24%3C/text%3E%3C/svg%3E">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4785900830813173" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Savings Rate Calculator — RetireRichCalc","url":"https://retirerichcalc.com/savings-rate/","description":"Calculate your savings rate and years to financial independence.","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  </script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to calculator</a>
+
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="/" class="site-logo" aria-label="RetireRichCalc — Home">
+      <span class="logo-text">RetireRichCalc</span>
+      <span class="logo-sub">Free Retirement Calculators</span>
+    </a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+      <a href="/"                  class="nav-link">Home</a>
+      <a href="/millionaire/"      class="nav-link">Millionaire Calc</a>
+      <a href="/retirement-needs/" class="nav-link">Retirement Needs</a>
+      <a href="/debt-freedom/"     class="nav-link">Debt Freedom</a>
+      <a href="/savings-rate/"     class="nav-link active">Savings Rate</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="page-header">
+    <div class="page-header-inner">
+      <div class="page-breadcrumb"><a href="/">Home</a> / Savings Rate</div>
+      <div class="page-eyebrow">Financial Independence Calculator</div>
+      <h1 class="page-title">Savings Rate Calculator</h1>
+      <p class="page-desc">Your savings rate is the single biggest lever for early retirement. See your rate and how long until financial independence — based on 5% real returns and the 4% rule.</p>
+    </div>
+  </div>
+
+  <section class="calc-section" aria-label="Savings Rate Calculator">
+    <div class="calc-wrap">
+      <div class="calc-grid">
+
+        <div class="calc-inputs" role="form" aria-label="Calculator inputs">
+          <h2 class="calc-inputs-heading">Your Income &amp; Spending</h2>
+
+          <div class="input-group">
+            <div class="input-row">
+              <label class="input-label-text" for="monthlyIncome">Monthly Take-Home Income</label>
+              <span class="input-value-display" id="dMonthlyIncome">$5,000/mo</span>
+            </div>
+            <div class="slider-wrap">
+              <input type="range" id="monthlyIncome" min="1000" max="25000" step="250" value="5000" aria-label="Monthly take-home income">
+            </div>
+            <div class="slider-minmax"><span class="slider-min">$1,000</span><span class="slider-max">$25,000</span></div>
+          </div>
+
+          <div class="input-group">
+            <div class="input-row">
+              <label class="input-label-text" for="monthlySpending">Monthly Spending</label>
+              <span class="input-value-display" id="dMonthlySpending">$4,000/mo</span>
+            </div>
+            <div class="slider-wrap">
+              <input type="range" id="monthlySpending" min="500" max="25000" step="250" value="4000" aria-label="Monthly spending">
+            </div>
+            <div class="slider-minmax"><span class="slider-min">$500</span><span class="slider-max">$25,000</span></div>
+          </div>
+
+        </div>
+
+        <div class="calc-results" aria-live="polite" aria-label="Results">
+          <div class="result-eyebrow">Your Savings Rate</div>
+          <div class="result-primary">
+            <div class="result-number" id="rRate">—</div>
+            <div class="result-sub">of take-home income saved</div>
+          </div>
+          <div class="result-divider"></div>
+          <div class="result-stats">
+            <div class="stat-row">
+              <span class="stat-label">Monthly Savings</span>
+              <span class="stat-value" id="rMonthlySavings">—</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Annual Savings</span>
+              <span class="stat-value" id="rAnnualSavings">—</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Years to Financial Independence</span>
+              <span class="stat-value accent" id="rFiYears">—</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Your Level</span>
+              <span class="stat-value green" id="rMilestone">—</span>
+            </div>
+          </div>
+          <div class="result-bar-section">
+            <div class="result-bar-labels"><span>Saved</span><span>Spent</span></div>
+            <div class="result-bar-track"><div class="result-bar-fill" id="rBar" style="width:20%"></div></div>
+          </div>
+          <div id="rFiSub" style="font-size:0.75rem;color:rgba(255,255,255,.5);margin-top:var(--space-3);line-height:1.5;"></div>
+          <button class="btn-share" onclick="shareSavings()" aria-label="Share your result">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+            </svg>
+            Share My Rate
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <span class="logo-text">RetireRichCalc</span>
+          <span class="logo-sub" style="display:block;margin-top:4px;">Free Retirement Calculators</span>
+        </div>
+        <p class="footer-desc">Free, instant retirement calculators. No sign-up, no noise — just your number.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Calculators</div>
+        <ul class="footer-links">
+          <li><a href="/millionaire/">Millionaire Calc</a></li>
+          <li><a href="/retirement-needs/">Retirement Needs</a></li>
+          <li><a href="/debt-freedom/">Debt Freedom</a></li>
+          <li><a href="/savings-rate/">Savings Rate</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Site</div>
+        <ul class="footer-links"><li><a href="/">Home</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copyright">&copy; 2026 RetireRichCalc.com. All rights reserved.</div>
+      <p class="footer-disclaimer">For educational purposes only. Not financial advice. Results assume 5% real investment returns and 4% withdrawal rate. Consult a licensed financial advisor.</p>
+    </div>
+  </div>
+</footer>
+
+<div id="rrc-toast" class="toast" role="status" aria-live="polite"></div>
+<script src="/assets/js/shared.js"></script>
+<script src="/assets/js/savings.js"></script>
+</body>
+</html>

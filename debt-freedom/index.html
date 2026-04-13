@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debt Freedom Calculator | RetireRichCalc</title>
+  <meta name="description" content="Find out exactly when you'll be debt-free and how much interest you'll save. Free debt payoff calculator with live results.">
+  <meta name="theme-color" content="#0F2447">
+  <link rel="canonical" href="https://retirerichcalc.com/debt-freedom/">
+  <link rel="alternate" hreflang="en" href="https://retirerichcalc.com/debt-freedom/">
+  <link rel="alternate" hreflang="x-default" href="https://retirerichcalc.com/debt-freedom/">
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Debt Freedom Calculator | RetireRichCalc">
+  <meta property="og:description" content="See exactly when you'll be debt-free and how much interest you'll save.">
+  <meta property="og:url"         content="https://retirerichcalc.com/debt-freedom/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230F2447'/%3E%3Ctext x='16' y='23' font-family='serif' font-size='20' font-weight='bold' fill='white' text-anchor='middle'%3E%24%3C/text%3E%3C/svg%3E">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4785900830813173" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Debt Freedom Calculator — RetireRichCalc","url":"https://retirerichcalc.com/debt-freedom/","description":"Calculate when you'll be debt-free and how much interest you'll pay.","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  </script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to calculator</a>
+
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="/" class="site-logo" aria-label="RetireRichCalc — Home">
+      <span class="logo-text">RetireRichCalc</span>
+      <span class="logo-sub">Free Retirement Calculators</span>
+    </a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+      <a href="/"                  class="nav-link">Home</a>
+      <a href="/millionaire/"      class="nav-link">Millionaire Calc</a>
+      <a href="/retirement-needs/" class="nav-link">Retirement Needs</a>
+      <a href="/debt-freedom/"     class="nav-link active">Debt Freedom</a>
+      <a href="/savings-rate/"     class="nav-link">Savings Rate</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="page-header">
+    <div class="page-header-inner">
+      <div class="page-breadcrumb"><a href="/">Home</a> / Debt Freedom</div>
+      <div class="page-eyebrow">Debt Payoff Calculator</div>
+      <h1 class="page-title">Debt Freedom Calculator</h1>
+      <p class="page-desc">Enter your debt details and see exactly when you'll be free. Every extra dollar you pay today saves you months of interest tomorrow.</p>
+    </div>
+  </div>
+
+  <section class="calc-section" aria-label="Debt Freedom Calculator">
+    <div class="calc-wrap">
+      <div class="calc-grid">
+
+        <div class="calc-inputs" role="form" aria-label="Calculator inputs">
+          <h2 class="calc-inputs-heading">Your Debt Details</h2>
+
+          <div class="input-group">
+            <div class="input-row">
+              <label class="input-label-text" for="totalDebt">Total Debt Balance</label>
+              <span class="input-value-display" id="dTotalDebt">$25,000</span>
+            </div>
+            <div class="slider-wrap">
+              <input type="range" id="totalDebt" min="500" max="100000" step="500" value="25000" aria-label="Total debt balance">
+            </div>
+            <div class="slider-minmax"><span class="slider-min">$500</span><span class="slider-max">$100,000</span></div>
+          </div>
+
+          <div class="input-group">
+            <div class="input-row">
+              <label class="input-label-text" for="monthlyPayment">Monthly Payment</label>
+              <span class="input-value-display" id="dMonthlyPayment">$500/mo</span>
+            </div>
+            <div class="slider-wrap">
+              <input type="range" id="monthlyPayment" min="50" max="5000" step="50" value="500" aria-label="Monthly payment">
+            </div>
+            <div class="slider-minmax"><span class="slider-min">$50/mo</span><span class="slider-max">$5,000/mo</span></div>
+          </div>
+
+          <div class="input-group">
+            <div class="input-row">
+              <label class="input-label-text" for="annualRate">Annual Interest Rate</label>
+              <span class="input-value-display" id="dAnnualRate">18.0%</span>
+            </div>
+            <div class="slider-wrap">
+              <input type="range" id="annualRate" min="0" max="30" step="0.5" value="18" aria-label="Annual interest rate">
+            </div>
+            <div class="slider-minmax"><span class="slider-min">0%</span><span class="slider-max">30%</span></div>
+          </div>
+
+        </div>
+
+        <div class="calc-results" aria-live="polite" aria-label="Results">
+          <div class="result-eyebrow">You'll be debt-free in</div>
+          <div class="result-primary">
+            <div class="result-number" id="rMonths">—</div>
+            <div class="result-sub"    id="rSub">at this payment rate</div>
+          </div>
+          <div class="result-divider"></div>
+          <div class="result-stats">
+            <div class="stat-row">
+              <span class="stat-label">Total Amount Paid</span>
+              <span class="stat-value" id="rTotalPaid">—</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Total Interest Paid</span>
+              <span class="stat-value accent" id="rInterest">—</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Principal vs Interest</span>
+              <span class="stat-value green" id="rSavings">—</span>
+            </div>
+          </div>
+          <div class="result-bar-section">
+            <div class="result-bar-labels"><span>Principal</span><span>Interest</span></div>
+            <div class="result-bar-track"><div class="result-bar-fill" id="rBar" style="width:50%"></div></div>
+          </div>
+          <button class="btn-share" onclick="shareDebt()" aria-label="Share your result">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+            </svg>
+            Share My Date
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <span class="logo-text">RetireRichCalc</span>
+          <span class="logo-sub" style="display:block;margin-top:4px;">Free Retirement Calculators</span>
+        </div>
+        <p class="footer-desc">Free, instant retirement calculators. No sign-up, no noise — just your number.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Calculators</div>
+        <ul class="footer-links">
+          <li><a href="/millionaire/">Millionaire Calc</a></li>
+          <li><a href="/retirement-needs/">Retirement Needs</a></li>
+          <li><a href="/debt-freedom/">Debt Freedom</a></li>
+          <li><a href="/savings-rate/">Savings Rate</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Site</div>
+        <ul class="footer-links"><li><a href="/">Home</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copyright">&copy; 2026 RetireRichCalc.com. All rights reserved.</div>
+      <p class="footer-disclaimer">For educational purposes only. Not financial advice. Consult a licensed financial advisor for personalized guidance.</p>
+    </div>
+  </div>
+</footer>
+
+<div id="rrc-toast" class="toast" role="status" aria-live="polite"></div>
+<script src="/assets/js/shared.js"></script>
+<script src="/assets/js/debt.js"></script>
+</body>
+</html>
