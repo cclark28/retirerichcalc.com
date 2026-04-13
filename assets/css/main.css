@@ -197,7 +197,7 @@ button { font-family: inherit; cursor: pointer; }
    ═══════════════════════════════════════════ */
 .hero {
   background: linear-gradient(155deg, var(--color-navy-dark) 0%, var(--color-navy) 55%, #224f8a 100%);
-  padding: var(--space-16) 0 var(--space-12);
+  padding: var(--space-16) 0 var(--space-8);
   position: relative;
   overflow: hidden;
 }
@@ -245,7 +245,7 @@ button { font-family: inherit; cursor: pointer; }
   font-size: clamp(1rem, 2vw, 1.2rem);
   color: rgba(255,255,255,.78);
   max-width: 560px;
-  margin: 0 auto var(--space-10);
+  margin: 0 auto var(--space-5);
   line-height: 1.65;
 }
 
@@ -296,7 +296,7 @@ button { font-family: inherit; cursor: pointer; }
    ═══════════════════════════════════════════ */
 .calc-section {
   background: var(--color-gray-50);
-  padding: var(--space-12) 0 var(--space-16);
+  padding: var(--space-8) 0 var(--space-16);
 }
 .calc-wrap {
   max-width: var(--calc-width);
@@ -569,7 +569,7 @@ input[type="range"]:hover::-moz-range-thumb {
 .calc-cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-5);
+  gap: var(--space-6);
 }
 .calc-card-link {
   display: flex;
@@ -722,10 +722,12 @@ input[type="range"]:hover::-moz-range-thumb {
    AD UNIT
    ═══════════════════════════════════════════ */
 .ad-unit {
-  margin: var(--space-8) 0;
+  margin: var(--space-4) 0;
   text-align: center;
+  min-height: 0;
 }
 .ad-unit ins { display: block; }
+.ad-unit:empty { display: none; }
 
 /* ═══════════════════════════════════════════
    RESPONSIVE
